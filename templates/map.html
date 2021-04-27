@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c649f1b66ed479d84aea31bdc3c9315 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5c649f1b66ed479d84aea31bdc3c9315" ></div>
+        
+</body>
+<script>    
+    
+            var map_5c649f1b66ed479d84aea31bdc3c9315 = L.map(
+                "map_5c649f1b66ed479d84aea31bdc3c9315",
+                {
+                    center: [12.971, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_698f495134f74d988486649c18f3620b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c649f1b66ed479d84aea31bdc3c9315);
+        
+    
+            var marker_705c69ae19f1416faa20ce5d8695f4ea = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(map_5c649f1b66ed479d84aea31bdc3c9315);
+        
+    
+        var popup_919684eb495440d89ca1325d00417afa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e37c02e1e0444e0925cd59b22551fdd = $(`<div id="html_4e37c02e1e0444e0925cd59b22551fdd" style="width: 100.0%; height: 100.0%;"><b>Information: </b>Need Food</div>`)[0];
+            popup_919684eb495440d89ca1325d00417afa.setContent(html_4e37c02e1e0444e0925cd59b22551fdd);
+        
+
+        marker_705c69ae19f1416faa20ce5d8695f4ea.bindPopup(popup_919684eb495440d89ca1325d00417afa)
+        ;
+
+        
+    
+    
+            var marker_65cccf30728549e194d552189131b26b = L.marker(
+                [12.9716, 77.6946],
+                {}
+            ).addTo(map_5c649f1b66ed479d84aea31bdc3c9315);
+        
+    
+        var popup_2d21c24b5c384c95b3158aad095a1814 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8912a04ef6d1493b971ef37716afb5a1 = $(`<div id="html_8912a04ef6d1493b971ef37716afb5a1" style="width: 100.0%; height: 100.0%;"><b>Information: </b>Need Water</div>`)[0];
+            popup_2d21c24b5c384c95b3158aad095a1814.setContent(html_8912a04ef6d1493b971ef37716afb5a1);
+        
+
+        marker_65cccf30728549e194d552189131b26b.bindPopup(popup_2d21c24b5c384c95b3158aad095a1814)
+        ;
+
+        
+    
+</script>

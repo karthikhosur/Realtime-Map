@@ -1,0 +1,25 @@
+
+from flask import Flask, render_template
+from read_sheet import get_all_records
+from plot_map import basemap_layer, earthquake_plot
+
+# instantiate a new Flash app
+app = Flask(__name__)
+
+
+@app.route('/')
+def earthquake_data():
+    # storing all data in a variable records
+    earthquakes = get_all_records()
+    # creating the map by calling the basemap_layer function
+	  map = basemap_layer()
+	  # generating the earthquake locations and plotting it by calling the earthquake_plot function
+		earthquake_plot(map=map, earthquakes=earthquakes)
+		# save the map in the templates folder
+		map.save('templates/map.html')
+		# render the index.html
+    return render_template('index.html')
+
+
+if __name__ == "__main__":
+    app.run()
